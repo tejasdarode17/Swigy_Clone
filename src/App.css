@@ -1,0 +1,65 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import "tailwindcss";
+
+
+/* this is for the login side bar */
+body {
+    overflow-x: hidden;
+    cursor: default;
+  }
+
+
+  /* this is for the filter buttons */
+
+.active{
+    background-color: gray;
+}
+
+.active p{
+    display: block;
+}
+
+
+
+
+/* this is spinner from spinner.css */
+.loaderRound {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+
+
+
+/* shimmer animation */
+.myAnimation{
+  animation-name: shimmer;
+  background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(230, 230, 230, 1) 60%, rgba(181, 177, 177, 1) 100%);
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
+@keyframes shimmer {
+  from{
+    background-position: -500px 0;
+  }
+  to{
+    background-position: 500px 0;
+  }
+}
+
